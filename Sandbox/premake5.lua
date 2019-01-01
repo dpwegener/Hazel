@@ -29,6 +29,33 @@ project "Sandbox"
 
 	filter "system:windows"
 		systemversion "latest"
+		defines
+		{
+			"HZ_PLATFORM_WINDOWS"
+		}
+
+	filter "system:linux"
+		systemversion "latest"
+		links
+		{
+			"Hazel",
+			"GLFW",
+			"Glad",
+			"ImGui",
+			"Xrandr",
+			"Xi",
+			"GLEW",
+			"GLU",
+			"GL",
+			"X11",
+			"dl",
+			"pthread",
+			"stdc++fs",	--GCC versions 5.3 through 8.x need stdc++fs for std::filesystem
+		}
+		defines
+		{
+			"HZ_PLATFORM_LINUX"
+		}
 
 	filter "configurations:Debug"
 		defines "HZ_DEBUG"

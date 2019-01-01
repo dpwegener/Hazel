@@ -1,6 +1,10 @@
 # Binaries
 **/bin/
 !vendor/premake/bin/
+# Directories
+.vs/
+/bin/
+Hazel/vendor/**/bin/
 bin-int/
 
 # Hazel files
@@ -12,3 +16,16 @@ bin-int/
 **.vcxproj
 **.vcxproj.filters
 **.vcxproj.user
+# Files
+*.user
+Makefile
+.vscode/
+Hazel.config
+Hazel.creator
+Hazel.files
+Hazel.includes
+
+# Visual Studio files
+*.sln
+**/**/*.vcxproj
+**/**/*.vcxproj.filters
