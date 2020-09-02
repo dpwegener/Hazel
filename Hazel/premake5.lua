@@ -74,7 +74,7 @@ project "Hazel"
 
 		defines
 		{
-			"HZ_PLATFORM_LINUX",
+--			"HZ_PLATFORM_LINUX",
 			"HZ_BUILD_DLL"
 		}
 	
