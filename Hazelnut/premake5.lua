@@ -27,6 +27,23 @@ project "Hazelnut"
 		"Hazel"
 	}
 
+	filter "system:linux"
+		systemversion "latest"
+		links
+		{
+			"GLFW",
+			"Glad",
+			"ImGui",
+			"Xrandr",
+			"Xi",
+			"GLU",
+			"GL",
+			"X11",
+			"dl",
+			"pthread",
+			"stdc++fs",	--GCC versions 5.3 through 8.x need stdc++fs for std::filesystem
+		}
+
 	filter "system:windows"
 		systemversion "latest"
 

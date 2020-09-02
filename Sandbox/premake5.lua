@@ -31,20 +31,17 @@ project "Sandbox"
 		systemversion "latest"
 		defines
 		{
-			"HZ_PLATFORM_WINDOWS"
 		}
 
 	filter "system:linux"
 		systemversion "latest"
 		links
 		{
-			"Hazel",
 			"GLFW",
 			"Glad",
 			"ImGui",
 			"Xrandr",
 			"Xi",
-			"GLEW",
 			"GLU",
 			"GL",
 			"X11",
@@ -54,7 +51,6 @@ project "Sandbox"
 		}
 		defines
 		{
-			"HZ_PLATFORM_LINUX"
 		}
 
 	filter "configurations:Debug"

@@ -3,7 +3,6 @@
 
 #include "Hazel/Renderer/Renderer.h"
 #include "Platform/OpenGL/OpenGLShader.h"
-#include "Hazel/Core/Application.h"
 
 namespace Hazel {
 

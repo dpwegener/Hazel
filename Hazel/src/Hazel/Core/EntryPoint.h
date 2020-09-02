@@ -1,8 +1,7 @@
 #pragma once
 #include "Hazel/Core/Base.h"
 
-#ifdef HZ_PLATFORM_WINDOWS
-
+#if defined(HZ_PLATFORM_WINDOWS) || defined(HZ_PLATFORM_LINUX)
 extern Hazel::Application* Hazel::CreateApplication();
 
 int main(int argc, char** argv)
